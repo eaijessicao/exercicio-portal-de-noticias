@@ -1,0 +1,932 @@
+.hr-special {
+  margin: 0 auto -1rem;
+  max-width: 1200px;
+}
+.hr-divider {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 180px;
+  grid-auto-flow: row;
+  gap: 20px;
+  margin: 30px auto;
+  width: 1200px;
+}
+
+.section-destaque {
+  display: grid;
+  grid-column: span 4;
+  grid-row: span 2;
+  height: 100%;
+
+  position: relative;
+
+  margin-top: -2rem;
+}
+
+.section-destaque .title-span {
+  position: absolute;
+  color: #b6013e;
+  font-weight: bold;
+  font-size: 14px;
+  top: -20px;
+}
+
+.destaque-bg-foto {
+  background-image: url("../assets/img/noticias/vacina-covid.jpg");
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  max-width: 458px;
+  border-radius: 10px;
+}
+
+.destaque-color-bg {
+  margin-right: -132px;
+  margin-left: 306px;
+  border-radius: 10px;
+  background-color: #b6013e;
+  color: white;
+  height: 317px;
+  max-width: 284px;
+  display: flex;
+}
+
+.destaque-content {
+  padding: 24px;
+  position: relative;
+}
+
+.destaque-content h4 {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.destaque-content h1 {
+  font-size: 26px;
+  line-height: 30px;
+  margin: 10px 0;
+}
+
+.destaque-content p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.destaque-content .light,
+.destaque-content .shadow {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30px;
+}
+
+.destaque-content .shadow {
+  right: 30px;
+  background-color: #ffffff8a;
+}
+.destaque-content .light {
+  right: 75px;
+}
+
+/* section principal */
+.section-principal {
+  display: grid;
+  grid-column: span 2;
+  grid-row: span 2;
+  grid-template-rows: repeat(2, 1fr);
+
+  border-radius: 15px;
+}
+
+.section-principal .principal-img {
+  display: grid;
+  max-width: 100%;
+  grid-row: span 1;
+}
+
+.section-principal div img {
+  width: 100%;
+  max-height: 181px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.section-principal h3 {
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  color: #ad3ecf;
+}
+
+.section-principal h2 {
+  color: #4b4c45;
+}
+
+.principal-content {
+  padding-bottom: 20px;
+}
+
+.main-container2 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 180px;
+  grid-auto-flow: row;
+  gap: 20px;
+  margin: 30px auto;
+  width: 1200px;
+}
+
+.major-section {
+  display: grid;
+  grid-column: span 4;
+  grid-row: span 5;
+  height: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.major-section article img {
+  max-height: 150px;
+  width: 379px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.major-section .article-container {
+  display: flex;
+  border-radius: 10px;
+  height: 100%;
+  padding: 23px 22px;
+}
+
+.major-section .article-container .article-content {
+  padding: 0 15px;
+}
+
+.major-section .article-container .article-content h3 {
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  color: #ad3ecf;
+}
+
+.major-section .article-container .article-content h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.major-section .article-container .article-content .time-last-span {
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: bold;
+  color: #aaa;
+  display: block;
+  margin-top: 60px;
+}
+
+.minor-noticia {
+  display: grid;
+  grid-column: span 2;
+  grid-row: span 2;
+
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center center;
+
+  color: #f7f7f7;
+}
+
+.minor-noticia div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+
+  box-shadow: 0px 0px 150px black inset;
+  border-radius: 10px;
+}
+
+.minor-noticia div h3 {
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+
+.minor-noticia div h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.medium-noticia {
+  display: grid;
+  grid-column: span 4;
+  grid-row: span 2;
+  align-items: end;
+  border-radius: 10px;
+
+  background-size: cover;
+}
+
+.medium-noticia div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+  border-radius: 10px;
+  height: 80%;
+  color: #f7f7f7;
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.medium-noticia div h3 {
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+
+.medium-noticia div h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.medium-noticia div p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.time-last-span {
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: bold;
+  color: #aaa;
+  display: block;
+}
+
+.tv-famosos-section {
+  grid-column: 1/5;
+}
+
+.tv-famosos-section div {
+  background: #5e94b6;
+  height: 34%;
+  border-radius: 0 0 10px 10px;
+
+  position: relative;
+}
+
+.tv-famosos-section div h2 {
+  width: 80%;
+}
+
+.tv-famosos-section div .light,
+.tv-famosos-section div .shadow {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.tv-famosos-section div .shadow {
+  right: 30px;
+  background-color: #ffffff8a;
+}
+.tv-famosos-section div .light {
+  right: 75px;
+}
+
+.single-noticia-container {
+  display: grid;
+  grid-column: span 4;
+  grid-row: span 3;
+  align-content: space-between;
+  border-radius: 10px;
+}
+
+.single-noticia-container article {
+  background-color: #fff;
+  border-radius: 10px;
+  max-height: 105px;
+}
+
+.single-noticia-container article .single-noticia-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.single-noticia-container article .single-noticia-content img {
+  height: 80px;
+  border-radius: 10px;
+}
+
+.single-noticia-container article h3 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+
+.single-noticia-container article h2 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #4b4c45;
+}
+
+.sport {
+  color: #5cb98a;
+}
+.famosos {
+  color: #5e94b6;
+}
+
+.divisor-videos-destaque {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divisor-videos-destaque h3 {
+  margin-right: 20px;
+  min-width: 162px;
+}
+
+.divisor-videos-destaque div {
+  width: 85%;
+  height: 1px;
+  background-color: #4b4c45;
+}
+
+.main-container3 section {
+  display: grid;
+  grid-auto-rows: 188px;
+  grid-column: span 2;
+  grid-row: span 2;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.main-container3 section div {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.main-container3 section .image-videos-container {
+  position: relative;
+}
+
+.main-container3 section .image-videos-container img {
+  height: 188px;
+  max-width: 283px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.main-container3 section .image-videos-container span {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  padding: 2px 9px;
+  border-radius: 16px;
+}
+
+.main-container3 section .title-videos-container {
+  padding: 22px;
+  position: relative;
+}
+
+.main-container3 section .title-videos-container h3 {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 15px 0;
+}
+
+.main-container3 section .title-videos-container h2 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #4b4c45;
+}
+
+.main-container3 section .title-videos-container span {
+  position: absolute;
+  top: -26px;
+
+  background-color: #ad3ecf;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  padding: 13px 17px;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+
+.section-horoscopo {
+  display: flex;
+  align-items: center;
+  grid-column: span 4;
+  grid-row: span 1;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.section-horoscopo div {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.section-horoscopo div h2,
+.section-horoscopo div h3 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.section-horoscopo div img {
+  margin: 5px 0;
+}
+
+.section-horoscopo div h3 {
+  color: #4a6acc;
+  margin-bottom: 5px;
+}
+
+.section-horoscopo div p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #999;
+}
+
+.section-bolsa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  grid-column: span 2;
+  grid-row: span 1;
+  border-radius: 10px;
+}
+
+.section-bolsa h2 {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.section-bolsa ul {
+  list-style: none;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.section-bolsa ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.section-bolsa h4,
+.section-bolsa span {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.section-bolsa span {
+  margin-left: 15px;
+  color: #4a6acc;
+}
+
+.section-mega-sena {
+  background-color: #fff;
+  grid-column: span 2;
+  grid-row: span 1;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.section-mega-sena h2 {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.section-mega-sena ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 220px;
+}
+
+.section-mega-sena ul span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+
+  color: #59b176;
+  border: 2px solid #59b176;
+
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 2px 10px;
+}
+
+.last-major-section {
+  display: grid;
+  grid-column: span 4;
+  grid-row: span 3;
+  height: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.last-single-noticia-container article {
+  max-height: 110px;
+  padding: 53px 10px 80px;
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    width: 1024px;
+  }
+
+  .divisor-videos-destaque {
+    width: 1024px;
+  }
+
+  .destaque-bg-foto {
+    max-width: 370px;
+  }
+
+  .destaque-color-bg {
+    margin-left: 215px;
+  }
+
+  .section-principal div img {
+    height: 181px;
+  }
+
+  .main-container2 {
+    max-width: 1024px;
+  }
+
+  .main-container2 > .major-section > article {
+    width: 540px;
+  }
+
+  .major-section .article-container .article-content .time-last-span {
+    margin-top: 38px;
+  }
+
+  .main-container3 section .image-videos-container img {
+    max-width: 241px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-container .section-principal .principal-content h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .major-section article img {
+    margin-right: 8px;
+  }
+
+  .major-section .article-container .article-content h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .minor-noticia div h2 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .medium-noticia div h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .main-container {
+    width: 768px;
+  }
+
+  .divisor-videos-destaque {
+    width: 768px;
+  }
+
+  .destaque-bg-foto {
+    max-width: 290px;
+  }
+
+  .destaque-color-bg {
+    margin-left: 90px;
+  }
+
+  .main-container2 {
+    max-width: 768px;
+  }
+
+  .main-container2 > .major-section > article {
+    width: 400px;
+  }
+
+  .major-section .article-container .article-content .time-last-span {
+    margin-top: 38px;
+  }
+
+  .major-section .article-container .article-content h3 {
+    margin-bottom: 15px;
+  }
+
+  .main-container3 section .image-videos-container img {
+    max-width: 177px;
+  }
+
+  .main-container3 section .title-videos-container h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .single-noticia-container article h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .medium-noticia div {
+    justify-content: flex-start;
+  }
+
+  .medium-noticia div h3 {
+    margin-bottom: 5px;
+  }
+
+  .medium-noticia div h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .tv-famosos-section div .light,
+  .tv-famosos-section div .shadow {
+    top: 100px;
+  }
+
+  .last-single-noticia-container article {
+    padding: 50px 10px 77px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 480px;
+  }
+
+  .divisor-videos-destaque {
+    width: 480px;
+  }
+
+  .destaque-bg-foto {
+    max-width: 330px;
+  }
+
+  .destaque-color-bg {
+    margin-left: 179px;
+  }
+
+  .section-destaque {
+    grid-column: span 5;
+  }
+
+  .destaque-content h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .destaque-content p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .section-principal {
+    grid-column: span 8;
+  }
+
+  .main-container .section-principal .principal-content h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .main-container2 {
+    width: 480px;
+  }
+
+  .main-container2 > .major-section > article {
+    width: 480px;
+  }
+
+  .minor-noticia div h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .major-section {
+    grid-column: span 8;
+  }
+
+  .minor-noticia {
+    grid-column: span 8;
+  }
+
+  .medium-noticia {
+    grid-column: span 8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .main-container2 > .cafune-section div {
+    justify-content: flex-end;
+  }
+
+  .single-noticia-container {
+    grid-column: span 8;
+  }
+
+  .main-container3 {
+    grid-template-columns: repeat(6, 1fr) !important;
+    width: 479px;
+  }
+
+  .main-container3 section {
+    grid-column: span 3;
+  }
+
+  .main-container3 section .image-videos-container img {
+    max-width: 230px;
+  }
+
+  .section-horoscopo {
+    grid-column: span 8;
+  }
+
+  .main-container4 {
+    max-width: 480px;
+  }
+
+  .section-bolsa,
+  .section-mega-sena {
+    grid-column: span 4;
+  }
+
+  .main-container4 .tv-famosos-section {
+    background-size: cover;
+    grid-column: span 8;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 560px) {
+  .main-container {
+    width: 360px;
+    grid-auto-rows: 206px;
+  }
+
+  .divisor-videos-destaque {
+    width: 360px;
+  }
+
+  .destaque-content {
+    padding: 22px;
+  }
+
+  .destaque-content h1 {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .destaque-content p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .destaque-content .light,
+  .destaque-content .shadow {
+    bottom: 14px;
+  }
+
+  .destaque-color-bg {
+    height: auto;
+  }
+
+  .section-destaque {
+    grid-row: span 1;
+  }
+
+  .section-principal div img {
+    height: 216px;
+  }
+  .section-principal div img {
+    height: 216px;
+  }
+
+  .principal-content {
+    padding-bottom: 0;
+    margin-top: -17px;
+  }
+
+  .main-container2 {
+    width: 360px;
+  }
+
+  .main-container2 > .major-section > article {
+    width: 360px;
+  }
+
+  .major-section .article-container {
+    padding: 23px 12px;
+  }
+
+  .major-section .article-container .article-content {
+    padding: 0 0 0 6px;
+  }
+
+  .major-section .article-container .article-content h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .main-container3 section {
+    grid-column: span 6;
+  }
+
+  .main-container3 section .image-videos-container img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main-container2 {
+    margin: 0 auto 30px;
+  }
+
+  .section-horoscopo div h2,
+  .section-horoscopo div h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .section-horoscopo div p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .section-bolsa h2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .section-bolsa h4,
+  .section-bolsa span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .section-mega-sena h2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .section-mega-sena div img {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+
+  .section-mega-sena ul span {
+    padding: 6px;
+  }
+}

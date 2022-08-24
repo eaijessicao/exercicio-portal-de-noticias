@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+h1,
+h2,
+h3 {
+  cursor: pointer;
+}
+
+.header-top {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.menu {
+  padding: 30px 30px 30px 0px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.flex-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu p {
+  color: #4e4e4e;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.label-input {
+  position: relative;
+  padding: 0 25px;
+  border-radius: 26px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.search-icon {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  filter: invert(0.8);
+}
+
+.input-de-busca {
+  padding: 16px 20px;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+}
+
+.input-de-busca::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 16.37px;
+}
+
+.tempo-chuvoso {
+  display: flex;
+  align-items: center;
+}
+
+.tempo-chuvoso img {
+  margin-right: 8px;
+  height: 40px;
+  width: 40px;
+}
+
+.tempo-chuvoso p {
+  color: #4e4e4e;
+  font-weight: 600;
+  line-height: 19.1px;
+}
+
+.temperatura {
+  display: flex;
+}
+
+.temperatura p + p {
+  margin-left: 6px;
+}
+
+.temperatura p:first-child {
+  color: #b03d70;
+}
+
+.temperatura p:last-child {
+  color: #4563bd;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.notificacao {
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+.circulo-header {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 10px #4a4a4a solid;
+  border-radius: 50%;
+}
+
+.icone-perfil {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.barra-navegacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.barra-navegacao a {
+  color: #4e4e4e;
+  font-weight: 700;
+  font-size: 0.87rem;
+  padding: 6px 0px;
+  text-decoration: none;
+}
+
+@media (max-width: 560px) {
+  .flex-menu {
+    position: relative;
+  }
+
+  .circulo-header {
+    position: absolute;
+    z-index: -1;
+    left: 46%;
+    top: -34%;
+  }
+
+  .menu {
+    padding: 30px 0;
+  }
+
+  .menu p {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .menu a p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .menu a img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .label-input {
+    padding: 0 0px 0 30px;
+    border-radius: 40px;
+  }
+
+  .search-icon {
+    height: 25px;
+    width: 25px;
+
+    top: 10px;
+    left: 7px;
+  }
+
+  .input-de-busca {
+    padding: 15px 14px 15px 0px;
+    margin-left: 0px;
+    border-radius: 20px;
+    width: 82px;
+  }
+
+  .tempo-chuvoso p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .tempo-chuvoso img {
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .notificacao {
+    margin-right: 0;
+    width: 25px;
+    height: 25px;
+  }
+
+  .notificacao + img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .barra-navegacao {
+    overflow: auto;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0;
+    z-index: 99;
+  }
+
+  .barra-navegacao li {
+    max-width: max-content;
+    margin-right: 15px;
+  }
+
+  .barra-navegacao li a {
+    display: block;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .tempo-chuvoso {
+    align-items: center;
+  }
+
+  .tempo-chuvoso img {
+    margin-right: 10px;
+  }
+
+  .input-de-busca {
+    display: hidden;
+    width: 0;
+    background-color: transparent;
+  }
+
+  .input-de-busca::placeholder {
+    color: transparent;
+    width: 20px;
+  }
+
+  .search-icon {
+    left: 10px;
+  }
+
+  .notificacao {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icone-perfil {
+    width: 25px;
+    height: 25px;
+  }
+}

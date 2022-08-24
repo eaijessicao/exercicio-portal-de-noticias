@@ -1,0 +1,60 @@
+/* rodapé */
+
+.rodape {
+  background-color: #4a4a4a;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #f2f2f2;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10px 0;
+}
+
+.copyright ul {
+  list-style: none;
+  display: flex;
+}
+.copyright ul li:last-child {
+  margin-left: 20px;
+}
+.copyright a {
+  color: #f2f2f2;
+}
+.circulo-footer {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 10px white solid;
+  border-radius: 50%;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+}
+
+@media (max-width: 560px) {
+  .circulo-footer {
+    bottom: -30%;
+    left: 45%;
+  }
+}
+
+@media (max-width: 360px) {
+  .copyright p {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .copyright a {
+    font-size: 8px;
+    line-height: 12px;
+    width: max-content;
+  }
+}
