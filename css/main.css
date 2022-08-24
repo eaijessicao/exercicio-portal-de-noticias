@@ -121,7 +121,7 @@
   font-size: 11px;
   line-height: 15px;
   margin-bottom: 10px;
-  color: #ad3ecf;
+  color: #8a2aa7;
 }
 
 .section-principal h2 {
@@ -176,7 +176,7 @@
   font-size: 11px;
   line-height: 15px;
   margin-bottom: 10px;
-  color: #ad3ecf;
+  color: #8a2aa7;
 }
 
 .major-section .article-container .article-content h2 {
@@ -188,7 +188,7 @@
   font-size: 11px;
   line-height: 15px;
   font-weight: bold;
-  color: #aaa;
+  color: #575757;
   display: block;
   margin-top: 60px;
 }
@@ -202,7 +202,7 @@
   background-size: cover;
   background-position: center center;
 
-  color: #f7f7f7;
+  color: #fffafa;
 }
 
 .minor-noticia div {
@@ -268,7 +268,7 @@
   font-size: 11px;
   line-height: 15px;
   font-weight: bold;
-  color: #aaa;
+  color: #575757;
   display: block;
 }
 
@@ -277,7 +277,7 @@
 }
 
 .tv-famosos-section div {
-  background: #5e94b6;
+  background: #365c78;
   height: 34%;
   border-radius: 0 0 10px 10px;
 
@@ -426,7 +426,7 @@
   position: absolute;
   top: -26px;
 
-  background-color: #ad3ecf;
+  background-color: #8a2aa7;
   font-weight: bold;
   font-size: 18px;
   color: #fff;
@@ -460,7 +460,7 @@
 }
 
 .section-horoscopo div h3 {
-  color: #4a6acc;
+  color: #2f4da7;
   margin-bottom: 5px;
 }
 
@@ -509,7 +509,7 @@
 
 .section-bolsa span {
   margin-left: 15px;
-  color: #4a6acc;
+  color: #2f4da7;
 }
 
 .section-mega-sena {
@@ -545,8 +545,8 @@
   font-size: 14px;
   font-weight: bold;
 
-  color: #59b176;
-  border: 2px solid #59b176;
+  color: #2c5e3c;
+  border: 2px solid #2c5e3c;
 
   border-radius: 50%;
   box-sizing: border-box;
