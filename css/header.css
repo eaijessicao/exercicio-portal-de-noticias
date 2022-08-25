@@ -148,17 +148,14 @@ h3 {
   padding: 6px 0px;
   text-decoration: none;
 }
-
-@media (max-width: 560px) {
-  .flex-menu {
-    position: relative;
-  }
-
+@media (max-width: 700px) {
   .circulo-header {
-    position: absolute;
-    z-index: -1;
-    left: 46%;
-    top: -34%;
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .circulo-header {
+    display: none;
   }
 
   .menu {
