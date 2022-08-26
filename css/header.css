@@ -259,6 +259,98 @@ h3 {
 }
 
 @media (max-width: 560px) {
+  .flex-menu {
+    position: relative;
+  }
+
+  .menu {
+    padding: 30px 0;
+  }
+
+  .menu p {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .menu a p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .menu a img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .label-input {
+    padding: 0 0px 0 30px;
+    border-radius: 40px;
+  }
+
+  .search-icon {
+    height: 25px;
+    width: 25px;
+
+    top: 10px;
+    left: 7px;
+  }
+
+  .input-de-busca {
+    padding: 15px 14px 15px 0px;
+    margin-left: 0px;
+    border-radius: 20px;
+    width: 82px;
+  }
+
+  .tempo-chuvoso p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .tempo-chuvoso img {
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .notificacao {
+    margin-right: 0;
+    width: 25px;
+    height: 25px;
+  }
+
+  .notificacao + img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .barra-navegacao {
+    overflow: auto;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0;
+    z-index: 99;
+  }
+
+  .barra-navegacao li {
+    max-width: max-content;
+    margin-right: 15px;
+  }
+
+  .barra-navegacao li a {
+    display: block;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
   .tempo-chuvoso {
     align-items: center;
   }
@@ -283,12 +375,19 @@ h3 {
   }
 
   .notificacao {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
 
   .icone-perfil {
     width: 25px;
     height: 25px;
+  }
+}
+
+@media (max-width: 317px) {
+  .circulo-header {
+    width: 34px;
+    height: 40px;
   }
 }
