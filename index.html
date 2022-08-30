@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./assets/splide/dist/css/splide.min.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -223,7 +225,7 @@
           class="medium-noticia cafune-section"
           style="background-image: url(./assets/img/noticias/cafune.jpg)"
         >
-          <div>
+          <div class="cafune-content">
             <h3>MÚSICA</h3>
             <h2>Lorem ipsum dolor sit met adispectetur lorem ipsum dolor</h2>
             <p>
@@ -294,17 +296,64 @@
           </article>
         </section>
 
-        <section
+        <!-- <section
           class="medium-noticia tv-famosos-section"
           style="background-image: url(./assets/img/noticias/gojira.jpg)"
         >
-          <div>
+          <div class="tv-famosos-content">
             <h3>TV E FAMOSOS</h3>
             <h2>Lorem ipsum dolor sit met adispectetur lorem ipsum dolor</h2>
             <span class="light"></span>
             <span class="shadow"></span>
           </div>
-        </section>
+        </section> -->
+
+        <article class="article-tv-famosos">
+          <section class="splide carrossel-tv-famosos">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="tv-famosos-container">
+                    <img src="./assets/img/noticias/gojira.jpg" alt="gojira" />
+
+                    <div class="tv-famosos-title">
+                      <h3>TV E FAMOSOS</h3>
+                      <h2>
+                        Lorem ipsum dolor sit met adispectetur lorem ipsum dolor
+                      </h2>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="tv-famosos-container">
+                    <img src="./assets/img/noticias/gojira.jpg" alt="gojira" />
+
+                    <div class="tv-famosos-title">
+                      <h3>TV E FAMOSOS</h3>
+                      <h2>
+                        Lorem ipsum dolor sit met adispectetur lorem ipsum dolor
+                      </h2>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="tv-famosos-container">
+                    <img src="./assets/img/noticias/gojira.jpg" alt="gojira" />
+
+                    <div class="tv-famosos-title">
+                      <h3>TV E FAMOSOS</h3>
+                      <h2>
+                        Lorem ipsum dolor sit met adispectetur lorem ipsum dolor
+                      </h2>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
       </div>
 
       <div class="divisor-videos-destaque">
@@ -378,17 +427,49 @@
       </div>
 
       <div class="main-container2 main-container4">
-        <section
-          class="medium-noticia tv-famosos-section"
-          style="background-image: url(./assets/img/noticias/gojira.jpg)"
-        >
-          <div>
-            <h3>TV E FAMOSOS</h3>
-            <h2>Lorem ipsum dolor sit met adispectetur lorem ipsum dolor</h2>
-            <span class="light"></span>
-            <span class="shadow"></span>
-          </div>
-        </section>
+        <article class="article-tv-famosos">
+          <section class="splide carrossel-2-tv-famosos">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="tv-famosos-container">
+                    <img src="./assets/img/noticias/gojira.jpg" alt="gojira" />
+                    <div class="tv-famosos-title">
+                      <h3>TV E FAMOSOS</h3>
+                      <h2>
+                        Lorem ipsum dolor sit met adispectetur lorem ipsum dolor
+                      </h2>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="tv-famosos-container">
+                    <img src="./assets/img/noticias/gojira.jpg" alt="gojira" />
+                    <div class="tv-famosos-title">
+                      <h3>TV E FAMOSOS</h3>
+                      <h2>
+                        Lorem ipsum dolor sit met adispectetur lorem ipsum dolor
+                      </h2>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="splide__slide">
+                  <div class="tv-famosos-container">
+                    <img src="./assets/img/noticias/gojira.jpg" alt="gojira" />
+                    <div class="tv-famosos-title">
+                      <h3>TV E FAMOSOS</h3>
+                      <h2>
+                        Lorem ipsum dolor sit met adispectetur lorem ipsum dolor
+                      </h2>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
 
         <section class="section-horoscopo">
           <div>
@@ -562,5 +643,18 @@
         </div>
       </div>
     </footer>
+
+    <script src="./assets/splide/dist/js/splide.min.js"></script>
+    <script>
+      new Splide(".carrossel-tv-famosos", {
+        type: "slide",
+        rewind: true,
+      }).mount();
+
+      new Splide(".carrossel-2-tv-famosos", {
+        type: "slide",
+        rewind: true,
+      }).mount();
+    </script>
   </body>
 </html>

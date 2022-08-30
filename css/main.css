@@ -236,7 +236,7 @@
   background-size: cover;
 }
 
-.medium-noticia div {
+.medium-noticia .cafune-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -247,18 +247,18 @@
   background: linear-gradient(to top, #000, transparent);
 }
 
-.medium-noticia div h3 {
+.medium-noticia .cafune-content h3 {
   font-size: 11px;
   line-height: 15px;
   margin-bottom: 10px;
 }
 
-.medium-noticia div h2 {
+.medium-noticia .cafune-content h2 {
   font-size: 24px;
   line-height: 28px;
 }
 
-.medium-noticia div p {
+.medium-noticia .cafune-content p {
   margin: 10px 0;
   font-size: 16px;
   line-height: 20px;
@@ -276,7 +276,7 @@
   grid-column: 1/5;
 }
 
-.tv-famosos-section div {
+.tv-famosos-section .tv-famosos-content {
   background: #365c78;
   height: 34%;
   border-radius: 0 0 10px 10px;
@@ -284,23 +284,23 @@
   position: relative;
 }
 
-.tv-famosos-section div h2 {
+.tv-famosos-section .tv-famosos-content h2 {
   width: 80%;
 }
 
-.tv-famosos-section div .light,
-.tv-famosos-section div .shadow {
+.tv-famosos-section .tv-famosos-content .light,
+.tv-famosos-section .tv-famosos-content .shadow {
   width: 30px;
   height: 4px;
   background-color: #fff;
   position: absolute;
 }
 
-.tv-famosos-section div .shadow {
+.tv-famosos-section .tv-famosos-content .shadow {
   right: 30px;
   background-color: #ffffff;
 }
-.tv-famosos-section div .light {
+.tv-famosos-section .tv-famosos-content .light {
   right: 75px;
 }
 
@@ -570,6 +570,97 @@
   padding: 53px 10px 80px;
 }
 
+/* * CARROSSEL TV FAMOSOS * */
+.article-tv-famosos {
+  grid-column: 1/5;
+  grid-row: span 2;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carrossel-tv-famosos .splide__track .splide__list .tv-famosos-container {
+  height: 378px;
+  color: white;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+}
+
+.carrossel-tv-famosos .splide__track .splide__list .tv-famosos-container img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.carrossel-tv-famosos
+  .splide__track
+  .splide__list
+  .tv-famosos-container
+  .tv-famosos-title {
+  z-index: 2;
+  background-color: #5e94b6;
+  padding: 15px 20px;
+}
+
+.carrossel-tv-famosos .splide__pagination {
+  left: 20rem;
+  bottom: 1.2rem;
+}
+
+.carrossel-tv-famosos .splide__pagination .splide__pagination__page {
+  border-radius: 0px;
+  margin: 3px 7px;
+  height: 5px;
+  width: 25px;
+}
+
+/* * CARROSSEL TV FAMOSOS 2 * */
+
+.carrossel-2-tv-famosos .splide__track .splide__list .tv-famosos-container {
+  height: 378px;
+  position: relative;
+  color: white;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.carrossel-2-tv-famosos .splide__track .splide__list .tv-famosos-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.carrossel-2-tv-famosos
+  .splide__track
+  .splide__list
+  .tv-famosos-container
+  .tv-famosos-title {
+  z-index: 2;
+  background-color: #5e94b6;
+  padding: 15px 20px;
+}
+
+.carrossel-2-tv-famosos .splide__pagination {
+  left: 20rem;
+  bottom: 1.2rem;
+}
+
+.carrossel-2-tv-famosos .splide__pagination .splide__pagination__page {
+  border-radius: 0px;
+  margin: 3px 7px;
+  height: 5px;
+  width: 25px;
+}
+
 @media (max-width: 1200px) {
   .main-container {
     width: 1024px;
@@ -628,7 +719,7 @@
     line-height: 24px;
   }
 
-  .medium-noticia div h2 {
+  .medium-noticia .cafune-content h2 {
     font-size: 22px;
     line-height: 26px;
   }
@@ -679,21 +770,21 @@
     line-height: 20px;
   }
 
-  .medium-noticia div {
+  .medium-noticia .cafune-content {
     justify-content: flex-start;
   }
 
-  .medium-noticia div h3 {
+  .medium-noticia .cafune-content h3 {
     margin-bottom: 5px;
   }
 
-  .medium-noticia div h2 {
+  .medium-noticia .cafune-content h2 {
     font-size: 18px;
     line-height: 22px;
   }
 
-  .tv-famosos-section div .light,
-  .tv-famosos-section div .shadow {
+  .tv-famosos-section .tv-famosos-content .light,
+  .tv-famosos-section .tv-famosos-content .shadow {
     top: 100px;
   }
 
